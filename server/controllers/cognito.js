@@ -91,8 +91,8 @@ async function cognitoSignInCallback(ctx) {
         Authorization: `Bearer ${response.data.access_token}`
       }
     })
-    const verifyEmailCheck = config['COGNITO_VERIFY_EMAIL'] || true;
-    if (verifyEmailCheck && userResponse.data.email_verified !== 'true') {
+    const verifyEmailCheck = config['COGNITO_VERIFY_EMAIL'] || "true";
+    if (verifyEmailCheck === "true" && userResponse.data.email_verified !== 'true') {
       throw new Error('Your email address has not been verified.')
     }
 
