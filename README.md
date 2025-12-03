@@ -4,6 +4,8 @@
 
 # Strapi plugin strapi-plugin-sso
 
+Original Author yasudacloud - Modified by kalpers
+
 This plugin can provide single sign-on.
 
 You will be able to log in to the administration screen using one of the following providers:
@@ -67,6 +69,7 @@ module.exports = ({env}) => ({
       COGNITO_OAUTH_REDIRECT_URI: 'http://localhost:1337/strapi-plugin-sso/cognito/callback', // URI after successful login
       COGNITO_OAUTH_REGION: 'ap-northeast-1', // AWS Cognito Region 
       COGNITO_USER_GROUP: '[User Group Name in AWS Cognito]', // allow authentication only for users belonging to the its user group if specified.
+      COGNITO_VERIFY_EMAIL: '[false/true]' // defaults to true if not set.  False will ignore the verified email flag
 
       // AzureAD
       AZUREAD_OAUTH_REDIRECT_URI: 'http://localhost:1337/strapi-plugin-sso/azuread/callback',

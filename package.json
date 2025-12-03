@@ -1,6 +1,6 @@
 {
-  "name": "strapi-plugin-sso",
-  "version": "1.0.7",
+  "name": "strapi-plugin-sso-v5",
+  "version": "1.0.0",
   "description": "Plug-in for single sign-on with Strapi!",
   "strapi": {
     "displayName": "Single Sign On",
@@ -41,19 +41,19 @@
     "styled-components": "^6.0.0"
   },
   "author": {
-    "name": "yasudacloud",
-    "url": "https://github.com/yasudacloud/strapi-plugin-sso"
+    "name": "Original Author yasudacloud - Modified by kalpers",
+    "url": "https://github.com/kalpers/strapi-plugin-sso"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yasudacloud/strapi-plugin-sso"
+    "url": "git+https://github.com/kalpers/strapi-plugin-sso.git"
   },
   "bugs": {
-    "url": "https://github.com/yasudacloud/strapi-plugin-sso/issues"
+    "url": "https://github.com/kalpers/strapi-plugin-sso/issues"
   },
   "maintainers": [
     {
-      "name": "yasudacloud"
+      "name": "kalpers"
     }
   ],
   "engines": {
